@@ -28,7 +28,7 @@ export const Navbar = ()=>{
                             <img src="https://cdn-icons-png.flaticon.com/128/10951/10951869.png"/>  
                         </div>
                         <div>
-                        <NavLink to="/order">
+                        <NavLink to="order">
                             <h2>My order</h2>
                         </NavLink>
                         </div>
@@ -40,7 +40,7 @@ export const Navbar = ()=>{
                         </div>
                         <div>
 
-                             <NavLink to="/cart">
+                             <NavLink to="cart">
                                 <h2>Cart</h2>
                             </NavLink>
                         </div>
