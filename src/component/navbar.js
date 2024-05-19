@@ -75,7 +75,7 @@ export const Navbar = ()=>{
                             <img src="https://cdn-icons-png.flaticon.com/128/2050/2050106.png"/>  
                         </div>
                         <div>
-                        <NavLink to="/sigin">
+                        <NavLink to="sigin">
                             <h2>Login</h2>
                         </NavLink>
                         </div>                                           
