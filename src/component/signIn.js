@@ -57,7 +57,7 @@ export const SignIn=()=>{
                 <button className={styles.button} 
                 onClick={()=>login()}>Sign-in</button>
             </div>
-            <NavLink to='sigup'>
+            <NavLink to="sigup">
             <h3 className={styles.signUp}>signUp</h3>
             </NavLink>
             
