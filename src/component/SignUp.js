@@ -57,7 +57,7 @@ export const SignUp=()=>{
                 {/* <Link>
                 </Link> */}
                 <br />
-                <span className={styles.text}>Already User? <NavLink to='/login' className={styles.link}>Login</NavLink></span>
+                <span className={styles.text}>Already User? <NavLink to='/sigin' className={styles.link}>Login</NavLink></span>
 
             </div>
         </div>
