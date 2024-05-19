@@ -1,0 +1,36 @@
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(225, 224, 224);
+    /* margin: 1rem; */
+}
+.icon{
+    margin-top: 0.1rem;
+    margin-left: 2rem;
+}
+.pages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 15rem;
+    /* margin-top: 2rem; */
+   
+}
+.field div{
+    /* margin-left: 1rem; */
+    /* margin-bottom: 2rem; */
+}
+.field{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 3rem;
+}
+.field img{
+    height: 1.7rem;
+    width : 1.7rem;
+    margin-right:0.5rem;
+}
+.field h2{
+    /* margin-bottom: 1rem; */
+    color:blue
+}

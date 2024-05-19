@@ -1,0 +1,77 @@
+.home{
+    display: flex;
+    flex-wrap: wrap;
+}
+.filter{
+        /* display: flex; */
+        height: 20rem;
+        width:20vw;
+        background-color: rgb(217, 222, 225);
+        margin-top: 7rem;
+        margin-left: 2rem;
+        border-radius: 0.6rem;
+        /* align-items: center; */
+    
+}
+.filter h2{
+    color : blue;
+    margin-left:2rem
+}
+.checkBoxContainer{
+    margin-left: 2rem;
+    font-size: 1.4rem;
+    color: rgb(73, 70, 70);
+    margin-top: 1.2rem;
+}
+.listContainer{
+    width:70vw;
+    height: 32rem; 
+    overflow-y: auto;
+    display: flex;
+    flex-wrap:  wrap;
+   
+    flex-direction: row;
+    background-color: rgb(250, 251, 252);
+    margin-top: 3rem;
+    margin-left: 2rem;
+    
+}
+.listItem {
+    width: 20vw;
+    height:34rem;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    background-color:  rgb(250, 251, 252);
+    /* border: 1px solid black; */
+    border:0.1rem solid rgb(225, 231, 235);
+    border-style: groove;
+    border-radius: 1rem;
+    
+}
+.listItem:hover{
+    background-color:  rgb(234, 240, 246); 
+}
+img{
+    width: 14rem;
+    height:21rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+p{
+    margin-left: 1rem;
+    color: grey;
+}
+h2{
+    margin-left:1rem
+}
+.listItem button{
+    margin-left: 1rem;
+    background-color: blue;
+    color: white;
+    font-size: 1.2rem;
+    width:14rem;
+    height: 2.5rem;
+    margin-left: 1.5rem;
+    border-radius: .5rem;
+}
+

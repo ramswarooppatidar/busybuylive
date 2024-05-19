@@ -1,0 +1,35 @@
+.orderContainer{
+    /* display: flex; */
+    justify-content: centre;
+    margin-left: 5rem;
+    margin-top: 10rem;
+    background-color: white;
+}
+.orderContainer h1{
+    margin-left: 15rem;
+    color: rgb(147, 144, 144);
+    font-style: italic;
+}
+.table{
+    margin-left: 5rem;
+    font-size: 1.2rem;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 8px; /* Adjust as needed */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table tfoot td {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.table tfoot td:first-child {
+    text-align: center;
+}
