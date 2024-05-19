@@ -32,7 +32,7 @@ const router = createHashRouter([
     children: [
       { index: true, element: <Home /> },
       { path: "sigin", element: <SignIn /> },
-      { path: "signup", element: <SignUp /> },
+      { path: "sigup", element: <SignUp /> },
       { path: "cart", element: <Cart /> },
       { path: "order", element: <MyOrder /> },
     ]
