@@ -193,7 +193,6 @@ function CustomItemContext({children}){
                 myOrder : []
               });
               setAuthenticate(true)
-             authenticateUser(email, password)
               console.log("user register successfully ")
         }catch(error){
             console.log("failed to register user : ", error.message)
@@ -202,23 +201,10 @@ function CustomItemContext({children}){
        
     }
 
-    const authenticateUser = async (username, password)=>{
+    const authenticateUser = (username, password)=>{
         console.log("it is called successfully, username :", username +"password ", password)
-        // const foundUser = user.find((usr)=> usr.username === username && usr.password === password)
-        
-        //fetch data from db not use use effect data
-        const docRef = collection(db, "user")
-        const docSnap = await getDocs(docRef)
-        const allUsers = docSnap.docs.map((doc)=>{
-            return{
-                id : doc.id,
-                ...doc.data()
-            }
-        })
-        console.log("found user :", allUsers)
-        setUser(allUsers)
-        const foundUser = allUsers.find((usr)=> usr.username === username && usr.password === password)
-
+        const foundUser = user.find((usr)=> usr.username === username && usr.password === password)
+        console.log("found user :", foundUser)
         if(foundUser){
                 setAuthenticate(true);
                 setUserId(foundUser.id);

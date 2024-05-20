@@ -22,8 +22,8 @@ import { useValue } from "../itemContext"
                 <thead>
                     <tr>
                         <th>Name</th>
-                        <th>qty</th>
                         <th>price</th>
+                        <th>qty</th>
                         <th>amount</th>
                     </tr>
                 </thead>

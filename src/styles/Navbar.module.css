@@ -1,8 +1,8 @@
-.navbar{
+/* .navbar{
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(225, 224, 224);
-    /* margin: 1rem; */
+
 }
 .icon{
     margin-top: 0.1rem;
@@ -12,13 +12,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 15rem;
-    /* margin-top: 2rem; */
+    margin-left: 15rem
    
-}
-.field div{
-    /* margin-left: 1rem; */
-    /* margin-bottom: 2rem; */
 }
 .field{
     display: flex;
@@ -31,6 +26,57 @@
     margin-right:0.5rem;
 }
 .field h2{
-    /* margin-bottom: 1rem; */
     color:blue
+} */
+
+/* accoding mobile and desktop */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(225, 224, 224);
+}
+
+.icon {
+    margin: 0.5rem 1rem; /* Adjust margin */
+}
+
+.pages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align pages */
+    margin: 0.5rem 1rem; /* Adjust margin */
+}
+
+.field {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* Center align items */
+    margin: 0.5rem 1rem; /* Adjust margin */
+}
+
+.field img {
+    height: 1.5rem; /* Decrease image size */
+    width: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.field h2 {
+    color: blue;
+    font-size: 1rem; /* Decrease font size */
+    margin: 0.5rem 0; /* Adjust margin */
+}
+
+
+@media only screen and (max-width: 768px) {
+    .pages {
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .field {
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .field h2 {
+        font-size: 0.8rem; /* Further decrease font size */
+    }
 }

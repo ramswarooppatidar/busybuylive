@@ -1,17 +1,15 @@
-.home{
+/* .home{
     display: flex;
     flex-wrap: wrap;
 }
 .total{
-    /* display: flex; */
     height: 10rem;
     width:20vw;
     background-color: rgb(217, 222, 225);
     margin-top: 7rem;
     margin-left: 2rem;
     border-radius: 0.6rem;
-    /* align-items: center; */
-    /* justify-content: center; */
+    
 }
 .total h3{
     margin-top: 2rem;
@@ -36,7 +34,6 @@
     margin-top: 3rem;
     margin-left: 2rem;
     background-color:  rgb(250, 251, 252);
-    /* border: 1px solid black; */
     border:0.1rem solid rgb(225, 231, 235);
     border-style: groove;
     border-radius: 1rem;
@@ -55,9 +52,7 @@ p{
     margin-left: 1rem;
     color: grey;
 }
-h2{
-    /* margin-left:1rem */
-}
+
 button{
     margin-left: 1rem;
     background-color: rgb(239, 29, 29);
@@ -90,12 +85,113 @@ button{
 .countIcon{
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: row; */
 }
 .countIcon img{
     height: 1.3rem;
     width: 1.3rem;
     margin-top: 1.3rem ;
-    /* padding-bottom: 1.5rem; */
+}
+ */
+
+
+  /* accoding desktop and mobile */
+  /* Common styles for both desktop and mobile */
+.home {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cartContainer {
+    width: 90%; /* Adjust width for mobile */
+    max-width: 70rem; /* Limit maximum width */
+    height: auto; /* Auto height */
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(250, 251, 252);
+    margin: 3rem auto; /* Center the cart container */
+}
+
+.cartItem {
+    width: 90%; /* Adjust width for mobile */
+    max-width: 20rem; /* Limit maximum width */
+    height: auto; /* Auto height */
+    margin: 2rem auto; /* Center the cart items */
+    background-color: rgb(250, 251, 252);
+    border: 0.1rem solid rgb(225, 231, 235);
+    border-radius: 1rem;
+}
+
+.cartItem:hover {
+    background-color: rgb(234, 240, 246);
+}
+
+img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Auto height */
+    margin-top: 1rem; /* Adjust margin */
+    margin-left: auto; /* Center the image horizontally */
+    margin-right: auto;
+}
+
+p {
+    margin: 0.5rem 1rem; /* Adjust margin */
+    color: grey;
+}
+
+button {
+    margin: 0.5rem 1rem; /* Adjust margin */
+    background-color: rgb(239, 29, 29);
+    color: white;
+    font-size: 1.2rem;
+    width: calc(100% - 2rem); /* Full width minus margin */
+    height: 2.5rem;
+    border-radius: 0.5rem;
+}
+.countIcon {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.countIcon img {
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-top: 1.3rem;
+}
+/* Desktop-specific styles */
+@media only screen and (min-width: 768px) {
+    .total {
+        width: 20vw;
+        height: 10rem;
+        background-color: rgb(217, 222, 225);
+        margin-top: 7rem;
+        margin-left: 2rem;
+        border-radius: 0.6rem;
+    }
+
+    .total h3 {
+        margin-top: 2rem;
+        margin-left: 3rem;
+    }
+
+    .total button {
+        margin-top: 2rem;
+        background-color: rgb(51, 76, 238);
+        color: white;
+        font-size: 1.2rem;
+        width: 9rem;
+        height: 2.2rem;
+        margin-left: 3rem;
+        border-radius: 0.5rem;
+    }
+
+    .itemCount {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        color: green;
+    }
+
+   
 }
 

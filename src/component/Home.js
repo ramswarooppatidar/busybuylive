@@ -4,7 +4,7 @@ import { useValue } from "../itemContext"
 import { useEffect, useState } from "react"
 export const Home =()=>{
     const {addToCart} = useValue()
-    const[price, setPrice] = useState(12)
+    const[price, setPrice] = useState(1000)
     const[filter, setFilter] = useState({
         womenCloth:false,
         menCloth : false,
@@ -50,7 +50,7 @@ export const Home =()=>{
                 <h1>Filter</h1>
                 <h2>price: {price}</h2>
                 <input type="range" 
-                min="100" max="150000"
+                min="1000" max="150000"
                 value={price}
                 onChange={handlePriceChanges}
                  />
