@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/busybuylive/static/css/main.9bb2246a.css",
-    "main.js": "/busybuylive/static/js/main.4b7a87bb.js",
+    "main.css": "/busybuylive/static/css/main.91f4bec3.css",
+    "main.js": "/busybuylive/static/js/main.5dc3a866.js",
     "index.html": "/busybuylive/index.html",
-    "main.9bb2246a.css.map": "/busybuylive/static/css/main.9bb2246a.css.map",
-    "main.4b7a87bb.js.map": "/busybuylive/static/js/main.4b7a87bb.js.map"
+    "main.91f4bec3.css.map": "/busybuylive/static/css/main.91f4bec3.css.map",
+    "main.5dc3a866.js.map": "/busybuylive/static/js/main.5dc3a866.js.map"
   },
   "entrypoints": [
-    "static/css/main.9bb2246a.css",
-    "static/js/main.4b7a87bb.js"
+    "static/css/main.91f4bec3.css",
+    "static/js/main.5dc3a866.js"
   ]
 }
