@@ -27,41 +27,41 @@ function CustomItemContext({children}){
           }
     ])
 
-    useEffect( ()=>{
-         async function fetchData(){
-            try{
-                const docRef = collection(db, "user");
-                const docSnap = await getDocs(docRef)
+    // useEffect( ()=>{
+    //      async function fetchData(){
+    //         try{
+    //             const docRef = collection(db, "user");
+    //             const docSnap = await getDocs(docRef)
     
-                console.log("Document data:", docSnap);
-                const users = docSnap.docs.map((doc) => {
-                    return{
-                        id : doc.id,
-                        ...doc.data()
-                    }
-                })
-                console.log("inside useEffect user :", users)
-                console.log("inside useEffect userId  :", userId)
-                setUser(users)  
+    //             console.log("Document data:", docSnap);
+    //             const users = docSnap.docs.map((doc) => {
+    //                 return{
+    //                     id : doc.id,
+    //                     ...doc.data()
+    //                 }
+    //             })
+    //             console.log("inside useEffect user :", users)
+    //             console.log("inside useEffect userId  :", userId)
+    //             setUser(users)  
 
-                const matchingUser = users.find((usr) => usr.id === userId);
-                //setCart may not be correct it is set when user login
-                if (matchingUser) {
-                    setCart(matchingUser.cart);
-                    console.log("Cart set successfully:", matchingUser.cart);
-                    setMyOrder(matchingUser.myOrder)
-                    console.log("myOrder set successfully:", myOrder);
-                } else {
-                    console.log("No user found with ID:", userId);
-                }                      
-            }catch(error){
-                console.error("Error fetching users:", error);
-            }
+    //             const matchingUser = users.find((usr) => usr.id === userId);
+    //             //setCart may not be correct it is set when user login
+    //             if (matchingUser) {
+    //                 setCart(matchingUser.cart);
+    //                 console.log("Cart set successfully:", matchingUser.cart);
+    //                 setMyOrder(matchingUser.myOrder)
+    //                 console.log("myOrder set successfully:", myOrder);
+    //             } else {
+    //                 console.log("No user found with ID:", userId);
+    //             }                      
+    //         }catch(error){
+    //             console.error("Error fetching users:", error);
+    //         }
            
-         }
-         fetchData();
+    //      }
+    //      fetchData();
        
-    }, [userId])
+    // }, [userId])
 
     // addData firebase
     async function addToCart(item){

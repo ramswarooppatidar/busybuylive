@@ -143,4 +143,28 @@ export const items =[
         description : "men cloth",
         price : 12345
     },
+    {
+        id:25,
+        imageUrl :"https://5.imimg.com/data5/TG/DN/MY-37294786/designer-artificial-jewellery.jpg",
+        description : "Jwelleryes",
+        price : 29545
+    },
+    {
+        id:26,
+        imageUrl :"https://navrathan.com/wp-content/uploads/2023/09/Antique-Bride-home.png",
+        description : "Jwelleryes",
+        price : 29545
+    },
+    {
+        id:27,
+        imageUrl :"https://images.pexels.com/photos/12995512/pexels-photo-12995512.jpeg?cs=srgb&dl=pexels-framesbyambro-12995512.jpg&fm=jpg",
+        description : "Jwelleryes",
+        price : 29545
+    },
+    {
+        id:28,
+        imageUrl :"https://saubhagyavati.in/cdn/shop/files/shell-jewellery-yellow.jpg?v=1703592404",
+        description : "Jwelleryes",
+        price : 29545
+    },
 ]
