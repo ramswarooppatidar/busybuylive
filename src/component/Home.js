@@ -4,7 +4,7 @@ import { useValue } from "../itemContext"
 import { useEffect, useState } from "react"
 export const Home =()=>{
     const {addToCart} = useValue()
-    const[price, setPrice] = useState(1000)
+    const[price, setPrice] = useState(75000)
     const[filter, setFilter] = useState({
         womenCloth:false,
         menCloth : false,
