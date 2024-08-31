@@ -1,5 +1,78 @@
-.orderContainer{
-    /* display: flex; */
+.orderContainer {
+    /* Consider uncommenting display: flex; if you need flexbox behavior */
+    justify-content: center; /* Fixed typo: 'centre' to 'center' */
+    margin-left: 5rem;
+    margin-top: 10rem;
+    background-color: white;
+    padding: 1rem; /* Adding some padding for better spacing */
+}
+
+.orderContainer h1 {
+    margin-left: 15rem;
+    color: rgb(147, 144, 144);
+    font-style: italic;
+}
+
+.table {
+    margin-left: 5rem;
+    font-size: 1.2rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 8px; /* Adjust as needed */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table tfoot td {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.table tfoot td:first-child {
+    text-align: center;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .orderContainer {
+        margin-left: 1rem; /* Reduce margin for smaller screens */
+        margin-top: 2rem; /* Adjust top margin for better fit */
+        padding: 1rem; /* Consistent padding for smaller devices */
+    }
+
+    .orderContainer h1 {
+        margin-left: 0; /* Center align the heading for smaller screens */
+        text-align: center;
+        font-size: 1.5rem; /* Adjust font size for readability */
+    }
+
+    .table {
+        margin-left: 0; /* Remove left margin */
+        font-size: 1rem; /* Adjust font size for readability */
+    }
+
+    .table th, .table td {
+        padding: 6px; /* Adjust padding for smaller screens */
+    }
+
+    .table tfoot td {
+        font-size: 1.1rem; /* Adjust font size in footer */
+    }
+}
+
+
+
+
+
+
+
+
+
+/* .orderContainer{
+
     justify-content: centre;
     margin-left: 5rem;
     margin-top: 10rem;
@@ -20,7 +93,7 @@
 }
 
 .table th, .table td {
-    padding: 8px; /* Adjust as needed */
+    padding: 8px; 
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
@@ -32,4 +105,4 @@
 
 .table tfoot td:first-child {
     text-align: center;
-}
+} */
